@@ -34,11 +34,8 @@ class FlatsController < ApplicationController
   end
 
   def destroy
-    if @flat.destroy
-     redirect_to flats_path
-   else
-      render :index
-    end
+    @flat.destroy
+    redirect_to flats_path
   end
 
   private

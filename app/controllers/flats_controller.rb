@@ -16,7 +16,7 @@ class FlatsController < ApplicationController
     @flat = Flat.new(flat_params)
 
     if @flat.save
-      redirect_to restaurant_path(@flat)
+      redirect_to flat_path(@flat)
     else
       render :new
     end
@@ -27,7 +27,7 @@ class FlatsController < ApplicationController
 
   def update
     if @flat.update(flat_params)
-      redirect_to restaurant_path(@flat)
+      redirect_to flat_path(@flat)
     else
       render :edit
     end

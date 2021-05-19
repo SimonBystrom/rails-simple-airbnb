@@ -1,2 +1,16 @@
-<h1>Flats#edit</h1>
-<p>Find me in app/views/flats/edit.html.erb</p>
+
+<div class="form-container">
+  <h1>Edit Flat</h1>
+  <%= simple_form_for flat_path(@flat) do |f| %>
+      <%= f.input :name %>
+      <%= f.input :address %>
+      <%= f.input :img %>
+      <%= f.input :description %>
+      <%= f.input :number_of_guests %>
+      <%= f.input :price_per_night %>
+      <div class="d-flex">
+        <%= f.submit class: 'btn btn-success mt-3' %>
+        <%= link_to 'Cancel', flat_path(@flat), class: 'btn btn-warning mt-3 ms-3'  %>
+      </div>
+  <% end %>
+</div>

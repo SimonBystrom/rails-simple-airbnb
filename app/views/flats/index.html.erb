@@ -2,7 +2,7 @@
 <div class="d-flex justify-content-around">
   <% @flats.each do |flat| %>
     <div class="card me-2" style="width: 18rem;">
-      <img class="card-img-top" src="" alt="Card image cap">
+      <img class="card-img-top" src= <%= flat.img %> alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title"> <%= flat.name %> </h5>
         <p class="card-text"> <%= flat.description %> </p>

@@ -16,3 +16,16 @@
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
+.show-container{
+  width: 80%;
+  margin: 100px auto;
+}
+
+.form-container{
+  width: 60%;
+  margin: 100px auto;
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 40px;
+}
